@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>294 - Halaman Artikel Blog</title>
+
+  <style>
+
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --code-bg: #f1f5f9;
+      --accent: #0ea5e9;
+      --success: #10b981;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    header.demo-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background-color: #dbeafe;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    p.desc {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .demo-area {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .info-box {
+      background-color: #eff6ff;
+      border-left: 4px solid var(--primary);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 24px;
+      font-size: 0.95rem;
+    }
+    .info-box h3 {
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #0f172a;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="demo-header">
+      <span class="badge">Modul 18: Proyek Praktik HTML</span>
+      <h1>294. Halaman Artikel Blog</h1>
+      <p class="desc">Menyusun tata letak artikel publikasi editorial lengkap dengan kutipan blok dan metadata penerbitan.</p>
+    </header>
+
+    <main class="demo-area">
+      <!-- Proyek Praktik 4: Halaman Artikel Blog Editorial Lengkap -->
+      <article style="background:#ffffff; border:1px solid #e2e8f0; padding:28px; border-radius:10px;">
+        <header style="margin-bottom:20px;">
+          <span style="background:#dbeafe; color:#1e40af; padding:4px 10px; border-radius:4px; font-size:0.8rem; font-weight:bold;">TEKNOLOGI WEB</span>
+          <h1 style="font-size:1.9rem; margin:10px 0 6px 0; color:#0f172a;">Menyelami Masa Depan HTML5: Standar Semantik 2026</h1>
+          <p style="font-size:0.85rem; color:#64748b;">
+            Oleh <span style="font-weight:600; color:#334155;">Tim Pengembang Antigravity</span> | 
+            Dipublikasikan <time datetime="2026-10-17">17 Oktober 2026</time> | 
+            Waktu Baca: 5 Menit
+          </p>
+        </header>
+
+        <section style="line-height:1.8; color:#334155; font-size:1.05rem;">
+          <p>
+            Evolusi spesifikasi dokumen web telah memasuki fase baru di mana peramban modern tidak hanya merender elemen secara visual, tetapi juga menginterpretasikan makna data secara mendalam untuk kecerdasan buatan.
+          </p>
+          
+          <blockquote style="margin:20px 0; padding:14px 20px; border-left:4px solid #2563eb; background:#f8fafc; font-style:italic;">
+            "Kode HTML yang bersih dan semantik adalah bentuk rasa hormat tertinggi seorang engineer kepada pengguna dan mesin peramban."
+          </blockquote>
+
+          <p>
+            Dengan menerapkan tag semantik seperti <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, dan Popover API bawaan, kita dapat mereduksi ribuan baris dependensi skrip yang membebani memori.
+          </p>
+        </section>
+
+        <footer style="margin-top:28px; padding-top:16px; border-top:1px solid #e2e8f0; display:flex; justify-content:space-between; font-size:0.9rem; color:#64748b;">
+          <span>Kategori: Semantic Web, Standards</span>
+          <a href="#share" style="color:#2563eb; font-weight:bold; text-decoration:none;">Bagikan Artikel &rarr;</a>
+        </footer>
+      </article>
+    </main>
+
+    <footer class="info-box">
+      <h3>Catatan Pembelajaran</h3>
+      <p>Materi ini mendemonstrasikan konsep <strong>Halaman Artikel Blog</strong> dalam HTML5. Amati struktur elemen, atribut yang diterapkan, dan bagaimana peramban me-render komponen tersebut secara visual.</p>
+    </footer>
+  </div>
+</body>
+</html>

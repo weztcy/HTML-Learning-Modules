@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>295 - Struktur Portal Berita</title>
+
+  <style>
+
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --code-bg: #f1f5f9;
+      --accent: #0ea5e9;
+      --success: #10b981;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    header.demo-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background-color: #dbeafe;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    p.desc {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .demo-area {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .info-box {
+      background-color: #eff6ff;
+      border-left: 4px solid var(--primary);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 24px;
+      font-size: 0.95rem;
+    }
+    .info-box h3 {
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #0f172a;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="demo-header">
+      <span class="badge">Modul 18: Proyek Praktik HTML</span>
+      <h1>295. Struktur Portal Berita</h1>
+      <p class="desc">Membangun struktur portal media berita dengan headline utama dan grid berita sekunder.</p>
+    </header>
+
+    <main class="demo-area">
+      <!-- Proyek Praktik 5: Struktur Portal Berita Multi-Grid -->
+      <section>
+        <header style="background:#dc2626; color:#ffffff; padding:12px 20px; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+          <h2 style="font-size:1.3rem; margin:0;">WARTA TEKNOLOGI NASIONAL</h2>
+          <span style="font-size:0.85rem; font-weight:600;">Edisi Terkini: 17 Oktober 2026</span>
+        </header>
+
+        <!-- Berita Utama Headline -->
+        <article style="margin-top:16px; padding:20px; background:#fff; border:1px solid #cbd5e1; border-radius:8px;">
+          <span style="color:#dc2626; font-weight:bold; font-size:0.85rem;">[HEADLINE UTAMA]</span>
+          <h3 style="font-size:1.5rem; margin:6px 0; color:#1e293b;">Inovasi Kurikulum Web Nasional: Peluncuran 300 Submodul Terpadu</h3>
+          <p style="color:#475569; line-height:1.6;">
+            Kementerian Pendidikan dan Teknologi mengumumkan standarisasi pengajaran markup web modern berbasis praktik mandiri dan pengujian visual otomatis.
+          </p>
+        </article>
+
+        <!-- Grid Berita Sekunder -->
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:16px;">
+          <article style="padding:14px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;">
+            <h4 style="margin-bottom:4px; color:#1e293b;">Kecepatan Rendering Peramban Meningkat</h4>
+            <p style="font-size:0.85rem; color:#64748b;">Engine peramban generasi baru mengoptimalkan native lazy loading hingga 40 persen.</p>
+          </article>
+          <article style="padding:14px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;">
+            <h4 style="margin-bottom:4px; color:#1e293b;">Adopsi Standar Aksesibilitas WCAG</h4>
+            <p style="font-size:0.85rem; color:#64748b;">Seluruh website layanan publik diwajibkan lolos uji aksesibilitas tingkat AA.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="info-box">
+      <h3>Catatan Pembelajaran</h3>
+      <p>Materi ini mendemonstrasikan konsep <strong>Struktur Portal Berita</strong> dalam HTML5. Amati struktur elemen, atribut yang diterapkan, dan bagaimana peramban me-render komponen tersebut secara visual.</p>
+    </footer>
+  </div>
+</body>
+</html>
